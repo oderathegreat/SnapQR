@@ -15,14 +15,17 @@ export default class SignIn extends React.Component {
       <View style={styles.signin}>
 
 
-     <Text style={styles.header}>Sign In </Text>
+     <Text style={styles.header}>Sign In here </Text>
 
-     <TextInput   style={styles.textinput} placeholder="Enter  username" underlineColorAndroid={'transparent'}/>
+     <TextInput   style={styles.textInput} placeholder="Enter  username" underlineColorAndroid={'transparent'}/>
 
-      <TextInput   style={styles.textinput} placeholder="Enter  password"  secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+      <TextInput   style={styles.textInput} placeholder="Enter  password"  secureTextEntry={true} underlineColorAndroid={'transparent'}/>
 
 
-      
+      <TouchableOpacity style={styles.button}>
+
+    <Text style={styles.btnSignInText}> LOGIN </Text>
+      </TouchableOpacity>
 
 
       </View>
@@ -34,31 +37,50 @@ const styles = StyleSheet.create({
   signin: {
    alignSelf:'stretch',
 
+
   },
 
 
 header:{
-fontSize:24,
+fontSize:18,
 color:'#fff',
 paddingBottom:10,
 marginBottom:40,
-borderBottomColor:'#0e2f60',
-borderBottomWidth:'1',
 
-}
 
-textinput:{
+},
 
+textInput:{
 alignSelf:'stretch',
-height:40,
+height:25,
 marginBottom:40,
-color:'#fff',
-borderBottomColor:'#010c1c',
+backgroundColor:'#f9fafc',
+padding:30,
+borderBottomColor:'#ccc',
 borderBottomWidth:1,
+color:'#0a1d3a',
+
+},
+
+btnSignInText:{
+
+color:'#FFF',
+fontWeight:'800',
+textAlign:'center',
+
+},
+
+button:{
+
+backgroundColor:'#0a1d3a',
+paddingVertical:15,
+
 
 
 
 
 }
+
+
 
 });
