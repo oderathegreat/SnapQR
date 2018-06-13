@@ -54,12 +54,9 @@ textInput:{
 alignSelf:'stretch',
 height:25,
 marginBottom:40,
-backgroundColor:'#f9fafc',
-padding:30,
 borderBottomColor:'#ccc',
 borderBottomWidth:1,
 color:'#0a1d3a',
-
 },
 
 btnSignInText:{
@@ -74,10 +71,6 @@ button:{
 
 backgroundColor:'#0a1d3a',
 paddingVertical:15,
-
-
-
-
 
 }
 
